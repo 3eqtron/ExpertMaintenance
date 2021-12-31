@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SelectedList">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myToolbar"
+android:background="@color/colorgreen"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:id="@+id/l1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:id="@+id/textinter"/>
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="40dp"
+            android:layout_height="14dp"
+            android:layout_weight="3"
+            android:shadowColor="@color/colorgreen"
+            android:text="Terminé" />
+    </LinearLayout>
+<com.google.android.material.tabs.TabLayout
+    android:id="@+id/tablayout"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+    <com.google.android.material.tabs.TabItem
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tab1"
+        android:text="@string/tab_text1"/>
+    <com.google.android.material.tabs.TabItem
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tab2"
+        android:text="@string/tab_text2"/>
+    <com.google.android.material.tabs.TabItem
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tab3"
+        android:text="@string/tab_text3"/>
+
+</com.google.android.material.tabs.TabLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/view_pager">
+
+    </androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>

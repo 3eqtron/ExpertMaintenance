@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Expert Maintenance</string>
+    <string name="tab_text1">t1</string>
+    <string name="tab_text2">fichier</string>
+    <string name="tab_text3">signature</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_adresse">Map</string>
+</resources>

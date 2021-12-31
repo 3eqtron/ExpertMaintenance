@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Intervention">
+
+<androidx.appcompat.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/Toolbar"
+    app:title="Intervention"
+    app:titleTextColor="@color/colorwhite"
+    android:background="@color/colorgreen">
+    <ImageButton style="@style/AppTheme"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/btnrefrech"
+
+        android:background="@drawable/updateselect"
+      />
+
+
+
+</androidx.appcompat.widget.Toolbar>
+    <Button
+        android:id="@+id/date"
+        android:layout_below="@+id/Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorAccent"
+        android:drawableLeft="@drawable/ic_arrow_drop_down_black_24dp"
+        android:text="Date intervention" />
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Listview"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/date"
+        tools:context="example.projettp.Intervention"/>
+    <ProgressBar
+        android:layout_weight="1"
+        android:id="@+id/progressBar_cyclic"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:theme="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:minWidth="40dp" />
+
+
+
+</RelativeLayout>

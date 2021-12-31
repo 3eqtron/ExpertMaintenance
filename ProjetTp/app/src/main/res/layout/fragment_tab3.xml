@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tab3">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+  <com.github.gcacace.signaturepad.views.SignaturePad
+      android:id="@+id/t"
+      android:layout_width="match_parent"
+      android:layout_height="400dp"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:backgroundTint="@color/colorgreen"
+        android:layout_below="@+id/t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnsave"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text="Enregistrer"/>
+    <Button
+        android:backgroundTint="@color/colorgreen"
+        android:layout_weight="1"
+        android:layout_below="@+id/t"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@+id/btnsave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnclear"
+        android:text="Effacer"/>
+</LinearLayout>
+</LinearLayout>
+
+
+</FrameLayout>
